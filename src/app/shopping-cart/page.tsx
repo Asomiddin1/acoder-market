@@ -155,7 +155,7 @@ const ShoppingCart = () => {
 			</div>
 			 </div>
 			):(
-            <div className='flex justify-center items-center h-full '>
+            <div className='flex justify-center items-center h-[60vh] '>
                 <h1 className='text-[40px]'>No Products</h1>
 			</div>
 			)}
