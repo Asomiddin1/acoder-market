@@ -12,7 +12,7 @@ const ShoppingCart = () => {
 	);
 
 	const removeProduct = (id: number) => {
-		const updatedCart = products.filter(product => product.id !== id);
+		const updatedCart :ProductType[] = products.filter(product => product.id !== id);
 		localStorage.setItem('carts', JSON.stringify(updatedCart));
 		setProducts(updatedCart);
 	};
@@ -71,7 +71,7 @@ const ShoppingCart = () => {
 				<div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0">
 				<div className="rounded-lg md:w-2/3 md:overflow-y-auto md:h-[70vh]">
 					{products.map((data) => (
-						<div className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
+						<div key={data.id} className="justify-between mb-6 rounded-lg bg-white p-6 shadow-md sm:flex sm:justify-start">
 							<div className='relative  md:w-52 w-full '>
 								<CustomImage product={data} fill />
 							</div>
