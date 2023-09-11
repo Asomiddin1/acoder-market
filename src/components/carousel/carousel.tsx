@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default class NextJsCarousel extends Component {
     render() {
         return (
-            <div className='w-full pt-[100px]'>
+            <div className='w-full pt-[100px] '>
               <Carousel>
                   <div>
                  <Image width={700} height={500} src={'https://assets.asaxiy.uz/uploads/banner/desktop/64be33f2a79b5.jpg.webp'} alt='image'/>
